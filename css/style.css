@@ -1,0 +1,106 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(112, 108, 146, 0.533)), to(rgba(102, 7, 89, 0.56)));
+  background: -o-linear-gradient(left, rgba(112, 108, 146, 0.533), rgba(102, 7, 89, 0.56));
+  background: linear-gradient(90deg, rgba(112, 108, 146, 0.533), rgba(102, 7, 89, 0.56));
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+.title {
+  max-width: 1170px;
+  margin: 0 auto;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 60px;
+  font-style: italic;
+  margin-bottom: 50px;
+  -webkit-animation: animateBgColor 5s infinite;
+          animation: animateBgColor 5s infinite;
+}
+
+@-webkit-keyframes animateBgColor {
+  0% {
+    color: rgb(230, 215, 5);
+  }
+  50% {
+    color: rgb(4, 0, 255);
+  }
+  65% {
+    color: linear-gradient(90deg, rgb(255, 244, 97), rgb(64, 0, 255));
+  }
+  100% {
+    color: rgb(230, 215, 5);
+  }
+}
+
+@keyframes animateBgColor {
+  0% {
+    color: rgb(230, 215, 5);
+  }
+  50% {
+    color: rgb(4, 0, 255);
+  }
+  65% {
+    color: linear-gradient(90deg, rgb(255, 244, 97), rgb(64, 0, 255));
+  }
+  100% {
+    color: rgb(230, 215, 5);
+  }
+}
+.answer {
+  max-width: 1170px;
+  margin: 0 auto;
+  font-size: 50px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  -webkit-animation: animateAnswer 5s infinite;
+          animation: animateAnswer 5s infinite;
+}
+
+@-webkit-keyframes animateAnswer {
+  0% {
+    color: rgb(202, 7, 7);
+  }
+  33% {
+    color: rgb(218, 80, 0);
+  }
+  75% {
+    color: linear-gradient(90deg, rgba(124, 4, 114, 0.633), rgb(1, 84, 162));
+  }
+  100% {
+    color: rgb(230, 13, 5);
+  }
+}
+
+@keyframes animateAnswer {
+  0% {
+    color: rgb(202, 7, 7);
+  }
+  33% {
+    color: rgb(218, 80, 0);
+  }
+  75% {
+    color: linear-gradient(90deg, rgba(124, 4, 114, 0.633), rgb(1, 84, 162));
+  }
+  100% {
+    color: rgb(230, 13, 5);
+  }
+}

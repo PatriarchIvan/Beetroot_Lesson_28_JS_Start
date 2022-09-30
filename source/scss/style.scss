@@ -1,0 +1,68 @@
+* {
+   padding: 0;
+   margin: 0;
+}
+body{
+   background: linear-gradient(90deg, rgba(112, 108, 146, 0.533), rgba(102, 7, 89, 0.56));
+}
+
+.main {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+}
+
+.title {
+   max-width: 1170px;
+   margin: 0 auto;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-size: 60px;
+   font-style: italic;
+   margin-bottom: 50px;
+   animation: animateBgColor 5s infinite;
+}
+
+@keyframes animateBgColor {
+   0% {
+      color: rgb(230, 215, 5);
+   }
+
+   50% {
+      color: rgb(4, 0, 255);
+   }
+
+   65% {
+      color: linear-gradient(90deg, rgb(255, 244, 97), rgb(64, 0, 255));
+   }
+
+   100% {
+      color: rgb(230, 215, 5);
+   }
+}
+
+.answer {
+   max-width: 1170px;
+   margin: 0 auto;
+   font-size: 50px;
+   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   animation: animateAnswer 5s infinite;
+}
+@keyframes animateAnswer {
+   0% {
+      color: rgb(202, 7, 7);
+   }
+
+   33% {
+      color: rgb(218, 80, 0);
+   }
+
+   75% {
+      color: linear-gradient(90deg, rgba(124, 4, 114, 0.633), rgb(1, 84, 162));
+   }
+
+   100% {
+      color: rgb(230, 13, 5);
+   }
+}
